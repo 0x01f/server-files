@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="package://accounts/cef/style.css">
+</head>
+<body>
+
+<div class="login-page">
+    <div class="form">
+        <div id="error"></div>
+        <form class="register-form" id="register">
+            <input id="reg-login" type="text" placeholder="Логин"/>
+            <input id="reg-nickname" type="text" placeholder="Игровое имя"/>
+            <input id="reg-password" type="password" placeholder="Пароль"/>
+            <input id="reg-password-confirm" type="password" placeholder="Повторите Пароль"/>
+            <button type="button" onclick="registerAttempt()">Регистрация</button>
+            <p class="message">Уже зарегистрированы? <a href="#" onclick="showLogin()">Войти</a></p>
+        </form>
+        <form class="login-form" id="login">
+            <input id="log-login" type="text" placeholder="Логин"/>
+            <input id="log-password" type="password" placeholder="Пароль"/>
+            <button type="button" onclick="loginAttempt()">Войти</button>
+            <p class="message">Не зарегистрированы? <a href="#" onclick="showRegister()">создать аккаунт</a></p>
+        </form>
+    </div>
+</div>
+
+
+<script src="package://accounts/cef/script.js"></script>
+
+</body>
+</html>
